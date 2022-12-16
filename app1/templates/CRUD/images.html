@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>Images</title>
+</head>
+<body>
+    <h1>Images list</h1>
+    <div class="main">
+        {% for data in dataset %}
+        <a class="card" href="show/{{data.id}}">            
+            <img src="{{ data.url }}" alt="{{ data.name }}">
+            <p class="name">{{ data.name }}</p>
+            <p class="prix">{{ data.prix }} €</p>
+            <p class="stock"><i>(Il reste {{ data.stock }} exemplaires)</i></p>
+        </a>
+        {% endfor %}
+    
+    </div>    
+</body>
+</html>

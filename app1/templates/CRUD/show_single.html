@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+
+    <title>{{ data.name }}</title>
+</head>
+<body>
+    <div class="main">
+        <h1>{{ data.name }}</h1>
+        <div class="product">
+            <img src="{{ data.url }}" alt="{{ data.name }}">
+            <p class="name">{{ data.name }}</p>
+            <p class="stock">Il reste {{ data.stock }} exemplaires</p>
+            <p class="prix">{{ data.prix }} €</p>
+
+            <a href="../delete/{{data.id}}">Supprimer</a>
+            <a href="../update/{{ data.id }}">Editer</a>
+        </div>
+    
+    </div>    
+</body>
+</html>

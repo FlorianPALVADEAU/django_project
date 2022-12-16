@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    padding-top: 10vh;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+.main{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+}
+
+.main form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+form input{
+    height: 30px;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.1px solid black;
+    width: 25%;
+    height: 50%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 7vh;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.card img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.card .name{
+    margin-bottom: 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card .stock{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.card button{
+    background-color: rgb(185, 181, 245);
+    color: white;
+    width: 20%;
+    height: 155%;
+    border: 0px;
+}
+.product{
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    *8border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.1px solid black;
+    width: 100%;
+    height: 100%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 7vh;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.product img{
+    width: 100%;
+}
+.product p{
+    font-size: 25px;
+}
+.product a{
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(97, 97, 228);
+    border: 0;
+    margin: 20px;
+}
